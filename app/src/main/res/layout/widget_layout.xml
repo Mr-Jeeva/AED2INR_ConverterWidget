@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/black"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="HALF_BLOOD_KING"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/minus100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-100" />
+
+
+            <Button
+                android:id="@+id/minus50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-50" />
+
+
+            <Button
+                android:id="@+id/minus10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-10" />
+
+            <Button
+                android:id="@+id/minus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Choose AED amount"/>
+
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="30sp"/>
+
+
+            <Button
+                android:id="@+id/convert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="convert"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/plus100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+100" />
+
+
+            <Button
+                android:id="@+id/plus50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+50" />
+
+
+            <Button
+                android:id="@+id/plus10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+10" />
+
+            <Button
+                android:id="@+id/plus1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="INR value of "/>
+
+            <TextView
+                android:id="@+id/valueOf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
